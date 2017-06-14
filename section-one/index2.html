@@ -1,0 +1,35 @@
+<!-- HTML:5 EMMET -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- REACT LIBRARY -->
+  <script src="https://unpkg.com/react@15.5.4/dist/react.js"></script>
+  <!-- REACT DOM LIBRARY -->
+  <script src="https://unpkg.com/react-dom@15.5.4/dist/react-dom.js"></script>
+  <!-- BABLE LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <title>React Out of the Box</title>
+</head>
+<body>
+  <!-- LOCATION IN DOM TO INSERT REACT CONTENT -->
+  <div id="app">React has not rendered yet</div>
+
+  <!-- JAVASCRIPT SCRIPT -->
+  <script type="text/babel">
+
+    var hello = <h1>Hello World</h1>;
+    var location = document.getElementById("app");
+
+    ReactDOM.render(
+      // REACT WHAT - JSX
+      hello,
+      // REACT WHERE
+      location
+    );
+
+  </script>
+</body>
+</html>
